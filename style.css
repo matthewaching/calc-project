@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.input {
+    height: 48px;
+    font-size: 24px;
+    text-align: right;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 4px;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#equal {
+    grid-row-start: 4;
+    grid-row-end: span 2;
+    grid-column-start: 4;
+    height: auto;
+}
